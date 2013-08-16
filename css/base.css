@@ -1,276 +1,276 @@
 /* line 4, sass/_variables.scss */
-.primary-color {
-  color: #639755;
+.purple {
+  color: #7755a9;
 }
 
 /* line 8, sass/_variables.scss */
-.secondary-color {
-  color: #de5508;
+.blue {
+  color: #55c3dc;
 }
 
 /* Responsive */
 /* line 1, sass/_typography.scss */
-body {
+html {
+  font-size: 16px;
+}
+
+/* line 5, sass/_typography.scss */
+html body {
   font-size: 16px;
   color: #333;
+  font-family: 'Lato', sans-serif;
 }
 
 /* Mixin */
 /* Base Font Size*/
-/* line 9, sass/_typography.scss */
-h1, .fpost h1.entry-title {
-  font-size: 3.2rem;
+/* line 14, sass/_typography.scss */
+h1 {
+  font-size: 6rem;
 }
 @media only screen and (max-width: 979px) {
-  /* line 9, sass/_typography.scss */
-  h1, .fpost h1.entry-title {
-    font-size: 2.56rem;
+  /* line 14, sass/_typography.scss */
+  h1 {
+    font-size: 4.8rem;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 9, sass/_typography.scss */
-  h1, .fpost h1.entry-title {
-    font-size: 2.24rem;
+  /* line 14, sass/_typography.scss */
+  h1 {
+    font-size: 4.2rem;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 9, sass/_typography.scss */
-  h1, .fpost h1.entry-title {
-    font-size: 1.92rem;
+  /* line 14, sass/_typography.scss */
+  h1 {
+    font-size: 3.6rem;
   }
 }
 @media only screen and (max-width: 320px) {
-  /* line 9, sass/_typography.scss */
-  h1, .fpost h1.entry-title {
-    font-size: 1.6rem;
-  }
-}
-/* line 26, sass/_typography.scss */
-.entry-content h1, .royalslider h1 {
-  font-size: 1.28rem;
-}
-@media only screen and (max-width: 480px) {
-  /* line 26, sass/_typography.scss */
-  .entry-content h1, .royalslider h1 {
-    font-size: 1rem;
+  /* line 14, sass/_typography.scss */
+  h1 {
+    font-size: 3rem;
   }
 }
 
-/* line 9, sass/_typography.scss */
-h2, .fpost h2.entry-title {
+/* line 14, sass/_typography.scss */
+h2 {
+  font-size: 5rem;
+}
+@media only screen and (max-width: 979px) {
+  /* line 14, sass/_typography.scss */
+  h2 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 14, sass/_typography.scss */
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 14, sass/_typography.scss */
+  h2 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 14, sass/_typography.scss */
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* line 14, sass/_typography.scss */
+h3 {
+  font-size: 4rem;
+}
+@media only screen and (max-width: 979px) {
+  /* line 14, sass/_typography.scss */
+  h3 {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 14, sass/_typography.scss */
+  h3 {
+    font-size: 2.8rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 14, sass/_typography.scss */
+  h3 {
+    font-size: 2.4rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 14, sass/_typography.scss */
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+/* line 14, sass/_typography.scss */
+h4 {
+  font-size: 3rem;
+}
+@media only screen and (max-width: 979px) {
+  /* line 14, sass/_typography.scss */
+  h4 {
+    font-size: 2.4rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 14, sass/_typography.scss */
+  h4 {
+    font-size: 2.1rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 14, sass/_typography.scss */
+  h4 {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 14, sass/_typography.scss */
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+/* line 14, sass/_typography.scss */
+h5 {
   font-size: 2rem;
 }
 @media only screen and (max-width: 979px) {
-  /* line 9, sass/_typography.scss */
-  h2, .fpost h2.entry-title {
+  /* line 14, sass/_typography.scss */
+  h5 {
     font-size: 1.6rem;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 9, sass/_typography.scss */
-  h2, .fpost h2.entry-title {
+  /* line 14, sass/_typography.scss */
+  h5 {
     font-size: 1.4rem;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 9, sass/_typography.scss */
-  h2, .fpost h2.entry-title {
+  /* line 14, sass/_typography.scss */
+  h5 {
     font-size: 1.2rem;
   }
 }
 @media only screen and (max-width: 320px) {
-  /* line 9, sass/_typography.scss */
-  h2, .fpost h2.entry-title {
-    font-size: 1rem;
-  }
-}
-/* line 26, sass/_typography.scss */
-.entry-content h2, .royalslider h2 {
-  font-size: 0.8rem;
-}
-@media only screen and (max-width: 480px) {
-  /* line 26, sass/_typography.scss */
-  .entry-content h2, .royalslider h2 {
-    font-size: 1rem;
-  }
-}
-
-/* line 9, sass/_typography.scss */
-h3, .fpost h3.entry-title {
-  font-size: 2.4rem;
-}
-@media only screen and (max-width: 979px) {
-  /* line 9, sass/_typography.scss */
-  h3, .fpost h3.entry-title {
-    font-size: 1.92rem;
-  }
-}
-@media only screen and (max-width: 767px) {
-  /* line 9, sass/_typography.scss */
-  h3, .fpost h3.entry-title {
-    font-size: 1.68rem;
-  }
-}
-@media only screen and (max-width: 480px) {
-  /* line 9, sass/_typography.scss */
-  h3, .fpost h3.entry-title {
-    font-size: 1.44rem;
-  }
-}
-@media only screen and (max-width: 320px) {
-  /* line 9, sass/_typography.scss */
-  h3, .fpost h3.entry-title {
-    font-size: 1.2rem;
-  }
-}
-/* line 26, sass/_typography.scss */
-.entry-content h3, .royalslider h3 {
-  font-size: 0.96rem;
-}
-@media only screen and (max-width: 480px) {
-  /* line 26, sass/_typography.scss */
-  .entry-content h3, .royalslider h3 {
-    font-size: 1rem;
-  }
-}
-
-/* line 9, sass/_typography.scss */
-h4, .fpost h4.entry-title {
-  font-size: 2.2rem;
-}
-@media only screen and (max-width: 979px) {
-  /* line 9, sass/_typography.scss */
-  h4, .fpost h4.entry-title {
-    font-size: 1.76rem;
-  }
-}
-@media only screen and (max-width: 767px) {
-  /* line 9, sass/_typography.scss */
-  h4, .fpost h4.entry-title {
-    font-size: 1.54rem;
-  }
-}
-@media only screen and (max-width: 480px) {
-  /* line 9, sass/_typography.scss */
-  h4, .fpost h4.entry-title {
-    font-size: 1.32rem;
-  }
-}
-@media only screen and (max-width: 320px) {
-  /* line 9, sass/_typography.scss */
-  h4, .fpost h4.entry-title {
-    font-size: 1.1rem;
-  }
-}
-/* line 26, sass/_typography.scss */
-.entry-content h4, .royalslider h4 {
-  font-size: 0.88rem;
-}
-@media only screen and (max-width: 480px) {
-  /* line 26, sass/_typography.scss */
-  .entry-content h4, .royalslider h4 {
-    font-size: 1rem;
-  }
-}
-
-/* line 9, sass/_typography.scss */
-h5, .fpost h5.entry-title {
-  font-size: 2rem;
-}
-@media only screen and (max-width: 979px) {
-  /* line 9, sass/_typography.scss */
-  h5, .fpost h5.entry-title {
-    font-size: 1.6rem;
-  }
-}
-@media only screen and (max-width: 767px) {
-  /* line 9, sass/_typography.scss */
-  h5, .fpost h5.entry-title {
-    font-size: 1.4rem;
-  }
-}
-@media only screen and (max-width: 480px) {
-  /* line 9, sass/_typography.scss */
-  h5, .fpost h5.entry-title {
-    font-size: 1.2rem;
-  }
-}
-@media only screen and (max-width: 320px) {
-  /* line 9, sass/_typography.scss */
-  h5, .fpost h5.entry-title {
-    font-size: 1rem;
-  }
-}
-/* line 26, sass/_typography.scss */
-.entry-content h5, .royalslider h5 {
-  font-size: 0.8rem;
-}
-@media only screen and (max-width: 480px) {
-  /* line 26, sass/_typography.scss */
-  .entry-content h5, .royalslider h5 {
+  /* line 14, sass/_typography.scss */
+  h5 {
     font-size: 1rem;
   }
 }
 
 /* Styles per section */
-/* line 58, sass/_typography.scss */
+/* line 56, sass/_typography.scss */
 h1, h2, h3, h4, h5 {
   margin: 0;
-  font-weight: normal;
-  line-height: 1.4;
-}
-/* line 63, sass/_typography.scss */
-header h1, h1.headline, header h2, h2.headline, header h3, h3.headline, header h4, h4.headline, header h5, h5.headline {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0 0 2rem;
-}
-/* line 68, sass/_typography.scss */
-h1.entry-title, h2.entry-title, h3.entry-title, h4.entry-title, h5.entry-title {
-  text-transform: none;
-  font-weight: normal;
-}
-/* line 72, sass/_typography.scss */
-.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5 {
-  margin: 2rem 0;
-  font-weight: bold;
-}
-
-/* line 78, sass/_typography.scss */
-.entry-content h1 {
-  font-weight: normal;
-  text-transform: uppercase;
-  display: inline-block;
-  color: #fff;
-  background: #639755;
-  padding: 10px 15px;
-  margin: 40px 0 20px 0;
-}
-/* line 86, sass/_typography.scss */
-.entry-content h1:first-child {
-  margin: 0 0 20px 0;
-}
-@media only screen and (max-width: 979px) {
-  /* line 78, sass/_typography.scss */
-  .entry-content h1 {
-    display: block;
-  }
+  font-weight: 100;
+  line-height: 1.2;
 }
 
 /* ===============================================
    Common
    =============================================== */
-/* line 5, sass/_common.scss */
+/* line 4, sass/_common.scss */
 .center {
   text-align: center;
 }
 
-/* line 1, sass/_sections.scss */
-section {
-  height: 1200px;
+/* line 7, sass/_common.scss */
+.unit {
+  font-size: 2rem;
 }
 
+/* line 2, sass/_button.scss */
+.button {
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block;
+  text-shadow: none;
+  margin: 10px 0;
+  padding: 1rem 5rem 0.9rem;
+  width: auto;
+  height: auto;
+  border: 5px solid #fff;
+  background-image: none !important;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 2rem;
+  font-family: inherit;
+  cursor: pointer;
+  -webkit-transition: background 0.1s ease-out;
+  -moz-transition: background 0.1s ease-out;
+  -o-transition: background 0.1s ease-out;
+  transition: background 0.1s ease-out;
+}
+
+/* line 23, sass/_button.scss */
+.button:hover {
+  background-color: white;
+  background-image: none !important;
+  color: #333;
+  -webkit-transition: background 0.1s ease-out;
+  -moz-transition: background 0.1s ease-out;
+  -o-transition: background 0.1s ease-out;
+  transition: background 0.1s ease-out;
+  -webkit-box-shadow: 0 0 15px rgba(0, 116, 177, 0.5);
+  -moz-box-shadow: 0 0 15px rgba(0, 116, 177, 0.5);
+  box-shadow: 0 0 15px rgba(0, 116, 177, 0.5);
+  text-decoration: none;
+}
+/* line 30, sass/_button.scss */
+.hentry .button:hover {
+  text-decoration: none;
+}
+
+/* line 35, sass/_button.scss */
+.button:active {
+  top: 1px;
+}
+
+/* line 3, sass/_sections.scss */
+section {
+  height: 1000px;
+}
 /* line 5, sass/_sections.scss */
+section .content {
+  padding: 100px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 15, sass/_sections.scss */
 section#hero {
-  background: #000000;
+  background: url("../img/hero-bg.jpg") no-repeat center center black;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+/* line 21, sass/_sections.scss */
+section#hero h1 {
+  font-size: 11rem;
+}
+
+/* line 26, sass/_sections.scss */
+section#history {
+  background: #7755a9;
+  color: #fff;
+}
+
+/* line 31, sass/_sections.scss */
+section#travel {
+  background: #55c3dc;
+  color: #fff;
 }

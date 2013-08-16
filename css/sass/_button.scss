@@ -1,0 +1,37 @@
+
+.button {
+    position: relative;
+    text-transform: uppercase;
+    display: inline-block;
+    text-shadow: none;
+    margin: 10px 0;
+    padding: 1rem 5rem 0.9rem;
+    width: auto;
+    height: auto;
+    border: 5px solid #fff;
+    background-image: none !important;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 2rem;
+    font-family: inherit;
+    cursor: pointer;
+    @include transition( background 0.1s ease-out );
+}
+
+.button:hover {
+    background-color: rgba(255,255,255,1);
+    background-image: none !important;
+    color: #333;
+    @include transition( background 0.1s ease-out );
+    @include box-shadow( 0 0 15px rgba(0, 116, 177, 0.5) );
+    text-decoration: none;
+    .hentry & {
+        text-decoration: none;
+    }
+}
+
+.button:active {
+    top: 1px;
+}
