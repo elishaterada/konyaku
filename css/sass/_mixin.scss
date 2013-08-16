@@ -1,0 +1,28 @@
+/* Responsive */
+
+$phone-portrait: 320px;
+$phone-landscape: 480px;
+$tablet-portrait: 768px;
+$tablet-landscape: 980px;
+$large-desktop: 1200px;
+
+@mixin respond-to($media) {
+    @if $media == phone-portrait {
+      @media only screen and (max-width: $phone-portrait) { @content; }
+    }
+    @else if $media == phone-landscape {
+      @media only screen and (max-width: $phone-landscape) { @content; }
+    }
+    @else if $media == phone-tablet {
+      @media only screen and (max-width: $tablet-portrait - 1) { @content; }
+    }
+    @else if $media == tablet-portrait {
+      @media only screen and (max-width: $tablet-landscape - 1) { @content; }
+    }
+    @else if $media == tablet-portrait-only {
+      @media only screen and (min-width: $tablet-portrait) and (max-width: $tablet-landscape - 1) { @content; }
+    }
+    @else if $media == large-desktop {
+      @media only screen and (min-width: $large-desktop) { @content; }
+    }
+}

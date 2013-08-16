@@ -1,0 +1,92 @@
+body {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Mixin */
+
+@mixin typography($base-font-size) {
+    &, .fpost &.entry-title {
+        font-size: $base-font-size;
+
+        @include respond-to(tablet-portrait) {
+            font-size: $base-font-size * 0.8;
+        }
+        @include respond-to(phone-tablet) {
+            font-size: $base-font-size * 0.7;
+        }
+        @include respond-to(phone-landscape) {
+            font-size: $base-font-size * 0.6;
+        }
+        @include respond-to(phone-portrait) {
+            font-size: $base-font-size * 0.5;
+        }
+    }
+    .entry-content &,
+    .royalslider & {
+        font-size: $base-font-size * 0.4;
+        @include respond-to(phone-landscape) {
+            font-size: 1rem;
+        }
+    }
+}
+
+/* Base Font Size*/
+
+h1 {
+    @include typography(3.2rem);
+}
+
+h2 {
+    @include typography(2rem);
+}
+
+h3 {
+    @include typography(2.4rem);
+}
+
+h4 {
+    @include typography(2.2rem);
+}
+
+h5 {
+    @include typography(2rem);
+}
+
+/* Styles per section */
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    font-weight: normal;
+    line-height: 1.4;
+    header &,
+    &.headline {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0 0 2rem;
+    }
+    &.entry-title {
+        text-transform: none;
+        font-weight: normal;
+    }
+    .entry-content & {
+        margin: 2rem 0;
+        font-weight: bold;
+    }
+}
+
+.entry-content h1 {
+    font-weight: normal;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #fff;
+    background: $primary-color;
+    padding: 10px 15px;
+    margin: 40px 0 20px 0;
+    &:first-child {
+        margin: 0 0 20px 0;
+    }
+    @include respond-to(tablet-portrait) {
+        display: block;
+    }
+}
