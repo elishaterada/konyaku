@@ -185,8 +185,19 @@ h1, h2, h3, h4, h5 {
 }
 
 /* line 7, sass/_common.scss */
+.right-text {
+  text-align: right;
+}
+
+/* line 10, sass/_common.scss */
 .unit {
   font-size: 2rem;
+}
+
+/* line 13, sass/_common.scss */
+.stat-detail {
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 /* line 2, sass/_button.scss */
@@ -196,7 +207,7 @@ h1, h2, h3, h4, h5 {
   display: inline-block;
   text-shadow: none;
   margin: 10px 0;
-  padding: 1rem 5rem 0.9rem;
+  padding: 0.5rem 5rem 0.4rem;
   width: auto;
   height: auto;
   border: 5px solid #fff;
@@ -216,31 +227,29 @@ h1, h2, h3, h4, h5 {
 
 /* line 23, sass/_button.scss */
 .button:hover {
-  background-color: white;
+  background-color: #fff;
   background-image: none !important;
-  color: #333;
+  color: #000;
   -webkit-transition: background 0.1s ease-out;
   -moz-transition: background 0.1s ease-out;
   -o-transition: background 0.1s ease-out;
   transition: background 0.1s ease-out;
-  -webkit-box-shadow: 0 0 15px rgba(0, 116, 177, 0.5);
-  -moz-box-shadow: 0 0 15px rgba(0, 116, 177, 0.5);
-  box-shadow: 0 0 15px rgba(0, 116, 177, 0.5);
   text-decoration: none;
 }
-/* line 30, sass/_button.scss */
-.hentry .button:hover {
-  text-decoration: none;
+/* line 29, sass/_button.scss */
+#history .button:hover {
+  color: #7755a9;
 }
 
-/* line 35, sass/_button.scss */
+/* line 34, sass/_button.scss */
 .button:active {
+  text-decoration: none;
   top: 1px;
 }
 
 /* line 3, sass/_sections.scss */
 section {
-  height: 1000px;
+  height: 900px;
 }
 /* line 5, sass/_sections.scss */
 section .content {
@@ -260,7 +269,7 @@ section#hero {
 }
 /* line 21, sass/_sections.scss */
 section#hero h1 {
-  font-size: 11rem;
+  font-size: 12rem;
 }
 
 /* line 26, sass/_sections.scss */
