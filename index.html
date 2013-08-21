@@ -7,6 +7,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="css/base.css" rel="stylesheet" media="screen">
         <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen">
+        <link href="assets/new-royalslider/royalslider/royalslider.css" rel="stylesheet" media="screen">
         <!-- <link href='http://fonts.googleapis.com/css?family=Marcellus+SC' rel='stylesheet' type='text/css'> -->
         <!-- <link href='http://fonts.googleapis.com/css?family=Alegreya+SC:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'> -->
 
@@ -19,7 +20,7 @@
                     <div class="span12 center">
                         <h2>Hey, Leah</h2>
                         <h1>you are my STAR tonight</h1>
-                        <a href="#history" class="button" style="margin-top: 40px;">NEXT <i class="icon-circle-arrow-right"></i></a>
+                        <a href="#history" class="button" style="margin-top: 40px;">NEXT <i class="icon-angle-down"></i></a>
                     </div>
                 </div>
             </div>
@@ -28,16 +29,18 @@
         <section id="history">
             <div class="content">
                 <div class="row">
-                    <div class="col-md-4">
-                        Photo?
+                    <div class="col-md-6 col-md-offset-1">
+                        <img class="photo" src="img/history.jpg">
                     </div>
-                    <div class="col-md-offset-6 col-md-4 right-text">
-                        <h1>2,920 <span class="unit">DAYS</span></h1>
+                    <div class="col-md-3 col-md-offset-1 right-text">
+                        <h1>2,920</h1>
+                        <div class="unit">DAYS</div>
                         <p class="stat-detail">Since we first kissed</p>
                         <hr>
-                        <h1>1,825 <span class="unit">DAYS</span></h1>
+                        <h1>1,825</h1>
+                        <div class="unit">DAYS</div>
                         <p class="stat-detail">Since we started to hang out</p>
-                        <a href="#travel" class="button" style="margin-top: 140px;">NEXT <i class="icon-circle-arrow-right"></i></a>
+                        <a href="#travel" class="button" style="margin-top: 140px;">NEXT <i class="icon-angle-down"></i></a>
                     </div>
                 </div>
             </div>
@@ -46,11 +49,18 @@
         <section id="travel">
             <div class="content">
                 <div class="row">
-                    <div class="span12 center">
-                        BG - Photos of cities
-                        #countries / cities
-                        Japan - Akihabara, Gundam, UFO
-                        Vancouver - Cycling,
+                    <div class="col-md-6 col-md-offset-1">
+                        <div id="travel-slider" class="royalSlider rsDefault" style="width: 100%;">
+                            <a class="rsImg" href="http://b.vimeocdn.com/ts/319/715/319715493_640.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1 right-text">
+                        <h1>10<sup>+</sup> <span class="unit">CITIES</span></h1>
+                        <p class="stat-detail">We visited together</p>
+                        <hr>
+                        <h1>2 <span class="unit">COUNTRIES</span></h1>
+                        <p class="stat-detail">We traveled so far</p>
+                        <a href="#travel" class="button" style="margin-top: 140px;">NEXT <i class="icon-angle-down"></i></a>
                     </div>
                 </div>
             </div>
@@ -95,6 +105,7 @@
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery-ui/jquery-ui.min.js"></script>
+        <script src="assets/new-royalslider/royalslider/jquery.royalslider.min.js"></script>
         <script src="js/main.js"></script>
 
     </body>

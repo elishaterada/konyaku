@@ -8,9 +8,19 @@
     text-align: right;
 }
 .unit {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .stat-detail {
     font-size: 1.5rem;
-    font-weight: 300;
+}
+sup {
+    font-size: 2rem;
+    top: -2rem;
+}
+hr {
+    @include opacity(0.25);
+}
+.photo {
+    @include border-radius(500px);
+    width: 100%;
 }
