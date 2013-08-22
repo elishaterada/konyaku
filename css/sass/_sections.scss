@@ -17,31 +17,37 @@ section#hero {
     background: url('../img/hero-bg.jpg') no-repeat center center #000000;
     -webkit-background-size: cover;
     background-size: cover;
-    color: #fff;
     text-shadow: 0 0 10px rgba(0,0,0,0.4);
     h1 {
         font-size: 12rem;
     }
 }
 
+section {
+    color: #fff;
+}
+
 section#history {
     background: $purple;
-    color: #fff;
 }
 
 section#travel {
-    background: $blue;
-    color: #fff;
+    background: $green;
+    #travel-slider .rsOverflow {
+        border: 10px solid #fff;
+        @include border-radius(0);
+        @include box-shadow( 0 0 5px rgba(0,0,0,0.5) );
+    }
 }
 
 section#music {
-
+    background: $blue;
 }
 
 section#food {
-
+    background: $brown;
 }
 
 section#cats {
-
+    background: url('../img/cats-bg.jpg') no-repeat bottom left #000;
 }

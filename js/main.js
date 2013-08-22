@@ -21,24 +21,25 @@ jQuery('.button').each(function(){
     // RoyalSlider
 
     jQuery('#travel-slider').royalSlider({
+        autoPlay: {
+            // autoplay options go gere
+            enabled: true,
+            pauseOnHover: true
+        },
         arrowsNav: true,
         arrowsNavAutoHide: false,
         fadeinLoadedSlide: true,
         controlNavigation: 'none',
         imageScaleMode: 'fill',
-        imageAlignCenter:true,
+        imageAlignCenter: true,
         loop: false,
         loopRewind: false,
         numImagesToPreload: 4,
         slidesOrientation: 'vertical',
         keyboardNavEnabled: true,
-        video: {
-            autoHideArrows:true,
-            autoHideControlNav:true
-        },
         /* size of all images http://help.dimsemenov.com/kb/royalslider-jquery-plugin-faq/adding-width-and-height-properties-to-images */
-        imgWidth: '100%',
-        imgHeight: 360
+        imgWidth: 545,
+        imgHeight: 545
     });
 
 });

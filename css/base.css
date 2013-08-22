@@ -1,13 +1,3 @@
-/* line 4, sass/_variables.scss */
-.purple {
-  color: #7755a9;
-}
-
-/* line 8, sass/_variables.scss */
-.blue {
-  color: #55c3dc;
-}
-
 /* Responsive */
 /* line 1, sass/_typography.scss */
 html {
@@ -196,7 +186,7 @@ h1, h2, h3, h4, h5 {
 
 /* line 13, sass/_common.scss */
 .stat-detail {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 /* line 16, sass/_common.scss */
@@ -219,6 +209,10 @@ hr {
   -o-border-radius: 500px;
   border-radius: 500px;
   width: 100%;
+  border: 10px solid #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 /* line 2, sass/_button.scss */
@@ -247,7 +241,7 @@ hr {
 }
 
 /* line 23, sass/_button.scss */
-.button:hover {
+.button:hover, .button:focus {
   background-color: #fff;
   background-image: none !important;
   color: #000;
@@ -258,11 +252,11 @@ hr {
   text-decoration: none;
 }
 /* line 29, sass/_button.scss */
-#history .button:hover {
+#history .button:hover, #history .button:focus {
   color: #7755a9;
 }
 /* line 32, sass/_button.scss */
-#travel .button:hover {
+#travel .button:hover, #travel .button:focus {
   color: #55c3dc;
 }
 
@@ -290,22 +284,51 @@ section#hero {
   background: url("../img/hero-bg.jpg") no-repeat center center black;
   -webkit-background-size: cover;
   background-size: cover;
-  color: #fff;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
-/* line 22, sass/_sections.scss */
+/* line 21, sass/_sections.scss */
 section#hero h1 {
   font-size: 12rem;
 }
 
-/* line 27, sass/_sections.scss */
-section#history {
-  background: #7755a9;
+/* line 26, sass/_sections.scss */
+section {
   color: #fff;
 }
 
-/* line 32, sass/_sections.scss */
+/* line 30, sass/_sections.scss */
+section#history {
+  background: #7755a9;
+}
+
+/* line 34, sass/_sections.scss */
 section#travel {
+  background: #87a955;
+}
+/* line 36, sass/_sections.scss */
+section#travel #travel-slider .rsOverflow {
+  border: 10px solid #fff;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* line 43, sass/_sections.scss */
+section#music {
   background: #55c3dc;
-  color: #fff;
+}
+
+/* line 47, sass/_sections.scss */
+section#food {
+  background: #714f39;
+}
+
+/* line 51, sass/_sections.scss */
+section#cats {
+  background: url("../img/cats-bg.jpg") no-repeat bottom left black;
 }
