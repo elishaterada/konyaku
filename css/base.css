@@ -219,10 +219,11 @@ hr {
 .button {
   position: relative;
   text-transform: uppercase;
-  display: inline-block;
+  display: block;
+  max-width: 500px;
   text-shadow: none;
-  margin: 10px 0;
-  padding: 0.5rem 5rem 0.4rem;
+  margin: 10px auto;
+  padding: 0.5rem 0 0.4rem;
   width: auto;
   height: auto;
   border: 3px solid #fff;
@@ -231,7 +232,7 @@ hr {
   text-align: center;
   text-decoration: none;
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-family: inherit;
   cursor: pointer;
   -webkit-transition: background 0.1s ease-out;
@@ -240,7 +241,7 @@ hr {
   transition: background 0.1s ease-out;
 }
 
-/* line 23, sass/_button.scss */
+/* line 24, sass/_button.scss */
 .button:hover, .button:focus {
   background-color: #fff;
   background-image: none !important;
@@ -251,16 +252,16 @@ hr {
   transition: background 0.1s ease-out;
   text-decoration: none;
 }
-/* line 29, sass/_button.scss */
+/* line 30, sass/_button.scss */
 #history .button:hover, #history .button:focus {
   color: #7755a9;
 }
-/* line 32, sass/_button.scss */
+/* line 33, sass/_button.scss */
 #travel .button:hover, #travel .button:focus {
   color: #55c3dc;
 }
 
-/* line 37, sass/_button.scss */
+/* line 38, sass/_button.scss */
 .button:active {
   text-decoration: none;
   top: 1px;
@@ -268,7 +269,7 @@ hr {
 
 /* line 3, sass/_sections.scss */
 section {
-  height: 900px;
+  height: 1100px;
 }
 /* line 5, sass/_sections.scss */
 section .content {
