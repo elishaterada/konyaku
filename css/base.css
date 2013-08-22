@@ -170,38 +170,44 @@ h1, h2, h3, h4, h5 {
    Common
    =============================================== */
 /* line 4, sass/_common.scss */
+body {
+  background: #000;
+  color: #fff;
+}
+
+/* line 8, sass/_common.scss */
 .center {
   text-align: center;
 }
 
-/* line 7, sass/_common.scss */
+/* line 11, sass/_common.scss */
 .right-text {
   text-align: right;
 }
 
-/* line 10, sass/_common.scss */
+/* line 14, sass/_common.scss */
 .unit {
   font-size: 1.5rem;
 }
 
-/* line 13, sass/_common.scss */
+/* line 17, sass/_common.scss */
 .stat-detail {
   font-size: 1.4rem;
 }
 
-/* line 16, sass/_common.scss */
+/* line 20, sass/_common.scss */
 sup {
   font-size: 2rem;
   top: -2rem;
 }
 
-/* line 20, sass/_common.scss */
+/* line 24, sass/_common.scss */
 hr {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
   opacity: 0.25;
 }
 
-/* line 23, sass/_common.scss */
+/* line 27, sass/_common.scss */
 .photo {
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
@@ -297,15 +303,6 @@ section {
   color: #fff;
 }
 
-/* line 30, sass/_sections.scss */
-section#history {
-  background: #7755a9;
-}
-
-/* line 34, sass/_sections.scss */
-section#travel {
-  background: #87a955;
-}
 /* line 36, sass/_sections.scss */
 section#travel #travel-slider .rsOverflow {
   border: 10px solid #fff;
@@ -319,17 +316,9 @@ section#travel #travel-slider .rsOverflow {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-/* line 43, sass/_sections.scss */
-section#music {
-  background: #55c3dc;
-}
-
-/* line 47, sass/_sections.scss */
-section#food {
-  background: #714f39;
-}
-
 /* line 51, sass/_sections.scss */
 section#cats {
-  background: url("../img/cats-bg.jpg") no-repeat bottom left black;
+  background-image: url("../img/cats-bg.jpg");
+  background-position: bottom left;
+  background-repeat: no-repeat;
 }

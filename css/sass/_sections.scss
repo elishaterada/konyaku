@@ -28,11 +28,11 @@ section {
 }
 
 section#history {
-    background: $purple;
+    // background: $purple;
 }
 
 section#travel {
-    background: $green;
+    // background: $green;
     #travel-slider .rsOverflow {
         border: 10px solid #fff;
         @include border-radius(0);
@@ -41,13 +41,15 @@ section#travel {
 }
 
 section#music {
-    background: $blue;
+    // background: $blue;
 }
 
 section#food {
-    background: $brown;
+    // background: $brown;
 }
 
 section#cats {
-    background: url('../img/cats-bg.jpg') no-repeat bottom left #000;
+    background-image: url('../img/cats-bg.jpg');
+    background-position: bottom left;
+    background-repeat: no-repeat;
 }
