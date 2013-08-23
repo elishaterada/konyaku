@@ -14,9 +14,6 @@ section {
 // Individual Sections
 
 section#hero {
-    background: url('../img/hero-bg.jpg') no-repeat center center #000000;
-    -webkit-background-size: cover;
-    background-size: cover;
     text-shadow: 0 0 10px rgba(0,0,0,0.4);
     h1 {
         font-size: 12rem;
@@ -49,7 +46,7 @@ section#food {
 }
 
 section#cats {
-    background-image: url('../img/cats-bg.jpg');
-    background-position: bottom left;
+    background-image: url('../img/cats-bg.png');
+    background-position: center left;
     background-repeat: no-repeat;
 }

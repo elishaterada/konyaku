@@ -2,7 +2,7 @@
    Common
    =============================================== */
 body {
-    background: #000;
+    background: url('../img/star-bg.jpg') repeat #000;
     color: #fff;
 }
 .center {
@@ -17,6 +17,7 @@ body {
 .stat-detail {
     font-size: 1.4rem;
 }
+
 sup {
     font-size: 2rem;
     top: -2rem;
@@ -29,4 +30,63 @@ hr {
     width: 100%;
     border: 10px solid #fff;
     @include box-shadow( 0 0 5px rgba(0,0,0,0.5) );
+}
+
+/* ===============================================
+   Planet
+   =============================================== */
+
+.planet {
+    display: block;
+    position: absolute;
+    -webkit-animation: rotating 60s linear infinite;
+    -moz-animation: rotating 60s linear infinite;
+    &.sun {
+        top: -400px;
+        left: -400px;
+        width: 800px;
+        height: 800px;
+    }
+    &.typeA {
+        height: 800px;
+        right: -300px;
+        top: 1550px;
+        width: 800px;
+    }
+    &.typeB {
+        height: 800px;
+        left: -300px;
+        top: 2550px;
+        width: 800px;
+    }
+    &.typeC {
+        height: 800px;
+        right: -300px;
+        top: 3550px;
+        width: 800px;
+    }
+    &.typeD {
+        height: 800px;
+        left: -300px;
+        top: 4550px;
+        width: 800px;
+    }
+}
+
+@-moz-keyframes rotating {
+    from{
+        -moz-transform: rotate(0deg);
+    }
+    to{
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
 }

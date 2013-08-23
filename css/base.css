@@ -171,7 +171,7 @@ h1, h2, h3, h4, h5 {
    =============================================== */
 /* line 4, sass/_common.scss */
 body {
-  background: #000;
+  background: url("../img/star-bg.jpg") repeat black;
   color: #fff;
 }
 
@@ -195,19 +195,19 @@ body {
   font-size: 1.4rem;
 }
 
-/* line 20, sass/_common.scss */
+/* line 21, sass/_common.scss */
 sup {
   font-size: 2rem;
   top: -2rem;
 }
 
-/* line 24, sass/_common.scss */
+/* line 25, sass/_common.scss */
 hr {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
   opacity: 0.25;
 }
 
-/* line 27, sass/_common.scss */
+/* line 28, sass/_common.scss */
 .photo {
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
@@ -221,6 +221,76 @@ hr {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
+/* ===============================================
+   Planet
+   =============================================== */
+/* line 39, sass/_common.scss */
+.planet {
+  display: block;
+  position: absolute;
+  -webkit-animation: rotating 60s linear infinite;
+  -moz-animation: rotating 60s linear infinite;
+}
+/* line 44, sass/_common.scss */
+.planet.sun {
+  top: -400px;
+  left: -400px;
+  width: 800px;
+  height: 800px;
+}
+/* line 50, sass/_common.scss */
+.planet.typeA {
+  height: 800px;
+  right: -300px;
+  top: 1550px;
+  width: 800px;
+}
+/* line 56, sass/_common.scss */
+.planet.typeB {
+  height: 800px;
+  left: -300px;
+  top: 2550px;
+  width: 800px;
+}
+/* line 62, sass/_common.scss */
+.planet.typeC {
+  height: 800px;
+  right: -300px;
+  top: 3550px;
+  width: 800px;
+}
+/* line 68, sass/_common.scss */
+.planet.typeD {
+  height: 800px;
+  left: -300px;
+  top: 4550px;
+  width: 800px;
+}
+
+@-moz-keyframes rotating {
+  /* line 77, sass/_common.scss */
+  from {
+    -moz-transform: rotate(0deg);
+  }
+
+  /* line 80, sass/_common.scss */
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotating {
+  /* line 86, sass/_common.scss */
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 89, sass/_common.scss */
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
 /* line 2, sass/_button.scss */
 .button {
   position: relative;
@@ -229,12 +299,12 @@ hr {
   max-width: 500px;
   text-shadow: none;
   margin: 10px auto;
-  padding: 0.5rem 0 0.4rem;
+  padding: 0.8rem 0 0.7rem;
   width: auto;
   height: auto;
-  border: 3px solid #fff;
+  background: #fff;
   background-image: none !important;
-  color: #fff;
+  color: #000;
   text-align: center;
   text-decoration: none;
   font-weight: 300;
@@ -247,7 +317,7 @@ hr {
   transition: background 0.1s ease-out;
 }
 
-/* line 24, sass/_button.scss */
+/* line 25, sass/_button.scss */
 .button:hover, .button:focus {
   background-color: #fff;
   background-image: none !important;
@@ -258,16 +328,16 @@ hr {
   transition: background 0.1s ease-out;
   text-decoration: none;
 }
-/* line 30, sass/_button.scss */
+/* line 31, sass/_button.scss */
 #history .button:hover, #history .button:focus {
   color: #7755a9;
 }
-/* line 33, sass/_button.scss */
+/* line 34, sass/_button.scss */
 #travel .button:hover, #travel .button:focus {
   color: #55c3dc;
 }
 
-/* line 38, sass/_button.scss */
+/* line 39, sass/_button.scss */
 .button:active {
   text-decoration: none;
   top: 1px;
@@ -288,22 +358,19 @@ section .content {
 
 /* line 16, sass/_sections.scss */
 section#hero {
-  background: url("../img/hero-bg.jpg") no-repeat center center black;
-  -webkit-background-size: cover;
-  background-size: cover;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
-/* line 21, sass/_sections.scss */
+/* line 18, sass/_sections.scss */
 section#hero h1 {
   font-size: 12rem;
 }
 
-/* line 26, sass/_sections.scss */
+/* line 23, sass/_sections.scss */
 section {
   color: #fff;
 }
 
-/* line 36, sass/_sections.scss */
+/* line 33, sass/_sections.scss */
 section#travel #travel-slider .rsOverflow {
   border: 10px solid #fff;
   -webkit-border-radius: 0;
@@ -316,9 +383,9 @@ section#travel #travel-slider .rsOverflow {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-/* line 51, sass/_sections.scss */
+/* line 48, sass/_sections.scss */
 section#cats {
-  background-image: url("../img/cats-bg.jpg");
-  background-position: bottom left;
+  background-image: url("../img/cats-bg.png");
+  background-position: center left;
   background-repeat: no-repeat;
 }
