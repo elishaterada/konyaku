@@ -39,8 +39,18 @@ hr {
 .planet {
     display: block;
     position: absolute;
-    -webkit-animation: rotating 60s linear infinite;
-    -moz-animation: rotating 60s linear infinite;
+    overflow: hidden;
+    img {
+        max-width: 100%;
+    }
+    .motion-slow {
+        -webkit-animation: rotating 120s linear infinite;
+        -moz-animation: rotating 120s linear infinite;
+    }
+    .motion-fast {
+        -webkit-animation: rotating 60s linear infinite;
+        -moz-animation: rotating 60s linear infinite;
+    }
     &.sun {
         top: -400px;
         left: -400px;
@@ -48,10 +58,14 @@ hr {
         height: 800px;
     }
     &.typeA {
+        right: 0;
         height: 800px;
-        right: -300px;
         top: 1550px;
         width: 800px;
+        img {
+            position: absolute;
+            right: -300px;
+        }
     }
     &.typeB {
         height: 800px;
@@ -61,9 +75,13 @@ hr {
     }
     &.typeC {
         height: 800px;
-        right: -300px;
+        right: 0;
         top: 3550px;
         width: 800px;
+        img {
+            position: absolute;
+            right: -200px;
+        }
     }
     &.typeD {
         height: 800px;
