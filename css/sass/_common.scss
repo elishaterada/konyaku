@@ -2,8 +2,11 @@
    Common
    =============================================== */
 body {
-    background: url('../img/star-bg.jpg') repeat #000;
+    background:  url('../img/star-lights-bg.png') repeat, url('../img/star-bg.jpg') repeat;
     color: #fff;
+}
+section {
+    position: relative;
 }
 .center {
     text-align: center;
@@ -30,6 +33,64 @@ hr {
     width: 100%;
     border: 10px solid #fff;
     @include box-shadow( 0 0 5px rgba(0,0,0,0.5) );
+}
+
+/* ===============================================
+   Shooting Star
+   =============================================== */
+
+.shooting-star {
+    display: block;
+    position: absolute;
+    right: 0;
+    &.typeA {
+        top: 100px;
+    }
+    &.typeB {
+        top: -200px;
+    }
+    &.typeC {
+        top: 300px;
+    }
+    img {
+        max-width: 100%;
+    }
+    .shooting-motion-slow {
+        -webkit-animation: star_movement 3s ease-in-out infinite;
+        -moz-animation: star_movement 3s ease-in-out infinite;
+    }
+    .shooting-motion-fast {
+        -webkit-animation: star_movement 1.5s ease-in-out infinite;
+        -moz-animation: star_movement 1.5s ease-in-out infinite;
+    }
+}
+
+@-moz-keyframes star_movement {
+    0% {
+        -moz-transform: translate(0, 0);
+        @include opacity(0);
+    }
+    25% {
+        @include opacity(100);
+    }
+    100% {
+        -moz-transform: translate(-1000px, 1000px);
+        @include opacity(0);
+    }
+}
+
+@-webkit-keyframes star_movement {
+    0% {
+        -webkit-transform: translate(0, 0);
+        @include opacity(0);
+    }
+    25% {
+        @include opacity(100);
+    }
+    100% {
+        -webkit-transform: translate(-1000px, 1000px);
+        @include opacity(0);
+    }
 }
 
 /* ===============================================

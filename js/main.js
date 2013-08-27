@@ -18,6 +18,30 @@ jQuery('.button').each(function(){
         e.preventDefault();
     });
 
+    // Answer No Trick
+
+    jQuery('#answer-no').mouseover(function(){
+        var current_choice = jQuery(this).text();
+        if (current_choice = 'No') {
+            jQuery(this).text('Yes');
+            jQuery('#answer-yes').text('No');
+        } else {
+            jQuery(this).text('No');
+            jQuery('#answer-yes').text('Yes');
+        }
+    });
+
+    jQuery('#answer-yes').mouseover(function(){
+        var current_choice = jQuery(this).text();
+        if (current_choice = 'No') {
+            jQuery(this).text('Yes');
+            jQuery('#answer-no').text('No');
+        } else {
+            jQuery(this).text('No');
+            jQuery('#answer-no').text('Yes');
+        }
+    });
+
     // RoyalSlider
 
     jQuery('#travel-slider').royalSlider({
