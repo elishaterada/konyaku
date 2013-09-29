@@ -478,7 +478,7 @@ section {
   color: #fff;
 }
 
-/* line 33, sass/_sections.scss */
+/* line 31, sass/_sections.scss */
 section#travel #travel-slider .rsOverflow {
   border: 10px solid #fff;
   -webkit-border-radius: 0;
@@ -491,7 +491,30 @@ section#travel #travel-slider .rsOverflow {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-/* line 48, sass/_sections.scss */
+/* line 39, sass/_sections.scss */
+section#music ul.artists {
+  margin-top: 50px;
+  list-style: none;
+  overflow: hidden;
+  clear: both;
+}
+/* line 44, sass/_sections.scss */
+section#music ul.artists li {
+  display: block;
+  margin: 1%;
+  width: 18%;
+  border: 1px solid #ccc;
+  height: 200px;
+  width: 200px;
+  float: left;
+  overflow: hidden;
+}
+/* line 53, sass/_sections.scss */
+section#music ul.artists li img {
+  max-width: 200px;
+}
+
+/* line 63, sass/_sections.scss */
 section#cats {
   background-image: url("../img/cats-bg.png");
   background-position: center left;

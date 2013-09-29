@@ -25,11 +25,9 @@ section {
 }
 
 section#history {
-    // background: $purple;
 }
 
 section#travel {
-    // background: $green;
     #travel-slider .rsOverflow {
         border: 10px solid #fff;
         @include border-radius(0);
@@ -38,11 +36,28 @@ section#travel {
 }
 
 section#music {
-    // background: $blue;
+    ul.artists {
+        margin-top: 50px;
+        list-style: none;
+        overflow: hidden;
+        clear: both;
+        li {
+            display: block;
+            margin: 1%;
+            width: 18%;
+            border: 1px solid #ccc;
+            height: 200px;
+            width: 200px;
+            float: left;
+            overflow: hidden;
+            img {
+                max-width: 200px;
+            }
+        }
+    }
 }
 
 section#food {
-    // background: $brown;
 }
 
 section#cats {
