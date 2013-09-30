@@ -491,15 +491,17 @@ section#travel #travel-slider .rsOverflow {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-/* line 39, sass/_sections.scss */
-section#music ul.artists {
+/* line 40, sass/_sections.scss */
+section#music ul,
+section#anime ul {
   margin-top: 50px;
   list-style: none;
   overflow: hidden;
   clear: both;
 }
-/* line 44, sass/_sections.scss */
-section#music ul.artists li {
+/* line 45, sass/_sections.scss */
+section#music ul li,
+section#anime ul li {
   display: block;
   margin: 1%;
   width: 18%;
@@ -509,14 +511,25 @@ section#music ul.artists li {
   float: left;
   overflow: hidden;
 }
-/* line 53, sass/_sections.scss */
-section#music ul.artists li img {
+/* line 54, sass/_sections.scss */
+section#music ul li img,
+section#anime ul li img {
   max-width: 200px;
 }
 
 /* line 63, sass/_sections.scss */
+section#anime ul li {
+  height: 300px;
+}
+
+/* line 69, sass/_sections.scss */
 section#cats {
   background-image: url("../img/cats-bg.png");
   background-position: center left;
   background-repeat: no-repeat;
+}
+
+/* line 75, sass/_sections.scss */
+section#proposal {
+  height: 700px;
 }

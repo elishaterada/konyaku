@@ -35,8 +35,9 @@ section#travel {
     }
 }
 
-section#music {
-    ul.artists {
+section#music,
+section#anime {
+    ul {
         margin-top: 50px;
         list-style: none;
         overflow: hidden;
@@ -57,11 +58,20 @@ section#music {
     }
 }
 
-section#food {
+section#anime {
+    ul {
+        li {
+            height: 300px;
+        }
+    }
 }
 
 section#cats {
     background-image: url('../img/cats-bg.png');
     background-position: center left;
     background-repeat: no-repeat;
+}
+
+section#proposal {
+    height: 700px;
 }
