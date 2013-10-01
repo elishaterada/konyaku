@@ -533,3 +533,7 @@ section#cats {
 section#proposal {
   height: 700px;
 }
+/* line 77, sass/_sections.scss */
+section#proposal .phase2 {
+  display: none;
+}
