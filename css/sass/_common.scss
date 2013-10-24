@@ -35,6 +35,18 @@ hr {
     @include box-shadow( 0 0 5px rgba(0,0,0,0.5) );
 }
 
+.tooltip {
+    &.top {
+        margin-top: 2px;
+    }
+    .tooltip-inner {
+        font-size: 2rem;
+        padding: 5px 20px;
+        max-width: 100%;
+        background: $purple;
+    }
+}
+
 /* ===============================================
    Shooting Star
    =============================================== */

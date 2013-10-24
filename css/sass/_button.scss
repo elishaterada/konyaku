@@ -28,12 +28,6 @@
     color: #000;
     @include transition( background 0.1s ease-out );
     text-decoration: none;
-    #history & {
-        color: $purple;
-    }
-    #travel & {
-        color: $blue;
-    }
 }
 
 .button:active {

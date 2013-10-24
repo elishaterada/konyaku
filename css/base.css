@@ -226,57 +226,69 @@ hr {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
+/* line 39, sass/_common.scss */
+.tooltip.top {
+  margin-top: 2px;
+}
+/* line 42, sass/_common.scss */
+.tooltip .tooltip-inner {
+  font-size: 2rem;
+  padding: 5px 20px;
+  max-width: 100%;
+  background: #7755a9;
+}
+
 /* ===============================================
    Shooting Star
    =============================================== */
-/* line 42, sass/_common.scss */
+/* line 54, sass/_common.scss */
 .shooting-star {
   display: block;
   position: absolute;
   right: 0;
 }
-/* line 46, sass/_common.scss */
+/* line 58, sass/_common.scss */
 .shooting-star.typeA {
   top: 100px;
 }
-/* line 49, sass/_common.scss */
+/* line 61, sass/_common.scss */
 .shooting-star.typeB {
   top: -200px;
 }
-/* line 52, sass/_common.scss */
+/* line 64, sass/_common.scss */
 .shooting-star.typeC {
   top: 300px;
 }
-/* line 55, sass/_common.scss */
+/* line 67, sass/_common.scss */
 .shooting-star img {
   max-width: 100%;
 }
-/* line 58, sass/_common.scss */
+/* line 70, sass/_common.scss */
 .shooting-star .shooting-motion-slow {
   -webkit-animation: star_movement 3s ease-in-out infinite;
   -moz-animation: star_movement 3s ease-in-out infinite;
 }
-/* line 62, sass/_common.scss */
+/* line 74, sass/_common.scss */
 .shooting-star .shooting-motion-fast {
   -webkit-animation: star_movement 1.5s ease-in-out infinite;
   -moz-animation: star_movement 1.5s ease-in-out infinite;
 }
 
 @-moz-keyframes star_movement {
-  /* line 69, sass/_common.scss */
+  /* line 81, sass/_common.scss */
   0% {
     -moz-transform: translate(0, 0);
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
   }
 
-  /* line 73, sass/_common.scss */
+  /* line 85, sass/_common.scss */
   25% {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10000);
     opacity: 100;
   }
 
-  /* line 76, sass/_common.scss */
+  /* line 88, sass/_common.scss */
   100% {
     -moz-transform: translate(-1000px, 1000px);
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -285,20 +297,20 @@ hr {
 }
 
 @-webkit-keyframes star_movement {
-  /* line 83, sass/_common.scss */
+  /* line 95, sass/_common.scss */
   0% {
     -webkit-transform: translate(0, 0);
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
   }
 
-  /* line 87, sass/_common.scss */
+  /* line 99, sass/_common.scss */
   25% {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10000);
     opacity: 100;
   }
 
-  /* line 90, sass/_common.scss */
+  /* line 102, sass/_common.scss */
   100% {
     -webkit-transform: translate(-1000px, 1000px);
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -309,65 +321,65 @@ hr {
 /* ===============================================
    Planet
    =============================================== */
-/* line 100, sass/_common.scss */
+/* line 112, sass/_common.scss */
 .planet {
   display: block;
   position: absolute;
   overflow: hidden;
 }
-/* line 104, sass/_common.scss */
+/* line 116, sass/_common.scss */
 .planet img {
   max-width: 100%;
 }
-/* line 107, sass/_common.scss */
+/* line 119, sass/_common.scss */
 .planet .motion-slow {
   -webkit-animation: rotating 120s linear infinite;
   -moz-animation: rotating 120s linear infinite;
 }
-/* line 111, sass/_common.scss */
+/* line 123, sass/_common.scss */
 .planet .motion-fast {
   -webkit-animation: rotating 60s linear infinite;
   -moz-animation: rotating 60s linear infinite;
 }
-/* line 115, sass/_common.scss */
+/* line 127, sass/_common.scss */
 .planet.sun {
   top: -400px;
   left: -400px;
   width: 800px;
   height: 800px;
 }
-/* line 121, sass/_common.scss */
+/* line 133, sass/_common.scss */
 .planet.typeA {
   right: 0;
   height: 800px;
   top: 1550px;
   width: 800px;
 }
-/* line 126, sass/_common.scss */
+/* line 138, sass/_common.scss */
 .planet.typeA img {
   position: absolute;
   right: -300px;
 }
-/* line 131, sass/_common.scss */
+/* line 143, sass/_common.scss */
 .planet.typeB {
   height: 800px;
   left: -300px;
   top: 2550px;
   width: 800px;
 }
-/* line 137, sass/_common.scss */
+/* line 149, sass/_common.scss */
 .planet.typeC {
   height: 800px;
   right: 0;
   top: 3550px;
   width: 800px;
 }
-/* line 142, sass/_common.scss */
+/* line 154, sass/_common.scss */
 .planet.typeC img {
   position: absolute;
   right: -200px;
 }
-/* line 147, sass/_common.scss */
+/* line 159, sass/_common.scss */
 .planet.typeD {
   height: 800px;
   left: -300px;
@@ -376,24 +388,24 @@ hr {
 }
 
 @-moz-keyframes rotating {
-  /* line 156, sass/_common.scss */
+  /* line 168, sass/_common.scss */
   from {
     -moz-transform: rotate(0deg);
   }
 
-  /* line 159, sass/_common.scss */
+  /* line 171, sass/_common.scss */
   to {
     -moz-transform: rotate(360deg);
   }
 }
 
 @-webkit-keyframes rotating {
-  /* line 165, sass/_common.scss */
+  /* line 177, sass/_common.scss */
   from {
     -webkit-transform: rotate(0deg);
   }
 
-  /* line 168, sass/_common.scss */
+  /* line 180, sass/_common.scss */
   to {
     -webkit-transform: rotate(360deg);
   }
@@ -436,16 +448,8 @@ hr {
   transition: background 0.1s ease-out;
   text-decoration: none;
 }
-/* line 31, sass/_button.scss */
-#history .button:hover, #history .button:focus {
-  color: #7755a9;
-}
-/* line 34, sass/_button.scss */
-#travel .button:hover, #travel .button:focus {
-  color: #55c3dc;
-}
 
-/* line 39, sass/_button.scss */
+/* line 33, sass/_button.scss */
 .button:active {
   text-decoration: none;
   top: 1px;
@@ -536,4 +540,8 @@ section#proposal {
 /* line 77, sass/_sections.scss */
 section#proposal .phase2 {
   display: none;
+}
+/* line 80, sass/_sections.scss */
+section#proposal .lyric {
+  cursor: pointer;
 }
