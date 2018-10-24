@@ -27,10 +27,11 @@ jQuery(document).ready(function() {
     });
 
     // Memorials
-
-    var date_first_kiss = new Date(2005, 10, 22);
-    var date_valentines_day = new Date(2006, 02, 14);
-    var date_going_out = new Date(2008, 10, 24);
+    // Note: months are off by 1
+    var date_first_kiss = new Date(2005, 9, 22);
+    var date_going_out = new Date(2008, 9, 24);
+    var date_engagement = new Date(2013, 9, 24);
+    var date_marriage = new Date(2017, 0, 27);
     var today = new Date();
 
     var since_first_kiss = Math.round((today - date_first_kiss) / (1000 * 60 * 60 * 24));
@@ -39,8 +40,16 @@ jQuery(document).ready(function() {
     var since_going_out = Math.round((today - date_going_out) / (1000 * 60 * 60 * 24));
     var since_going_out_comma = numberWithCommas(since_going_out);
 
+    var since_engagement = Math.round((today - date_engagement) / (1000 * 60 * 60 * 24));
+    var since_engagement_comma = numberWithCommas(since_engagement);
+
+    var since_marriage = Math.round((today - date_marriage) / (1000 * 60 * 60 * 24));
+    var since_marriage_comma = numberWithCommas(since_marriage);
+
     jQuery('#since-first-kiss').text(since_first_kiss_comma);
     jQuery('#since-going-out').text(since_going_out_comma);
+    jQuery('#since-engagement').text(since_engagement_comma);
+    jQuery('#since-marriage').text(since_marriage_comma);
 
     // RoyalSlider
 
